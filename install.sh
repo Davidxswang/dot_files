@@ -19,3 +19,6 @@ fi
 
 cp tmux.conf ~/tmux.conf
 echo -e "\e[91mThe tmux.conf file is copied to ~.\e[0m"
+tmux source-file ~/tmux.conf
+echo -e "\e[91mThe tmux.conf is loaded.\e[0m"
+
