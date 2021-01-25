@@ -18,5 +18,13 @@ if [ -a ~/.tmux.conf ]
 fi
 
 cp tmux.conf ~/.tmux.conf
-echo -e "\e[91mThe tmux.conf file is copied to ~.\e[0m"
+echo -e "\e[93mThe tmux.conf file is copied to ~.\e[0m"
 
+# jupyter lab
+if [ -a ~/.jupyter/jupyter_lab_config.py ]
+	then
+		echo -e "\e[91mA jupyter_lab_config.py file already exists in ~, a backup is made.\e[0m"
+		cp ~/.jupyter/jupyter_lab_config.py ~/.jupyter/jupyter_lab_config.py.backup
+fi
+cp jupyter_lab_config.py ~/.jupyter/jupyter_lab_config.py
+echo -e "\e[93mThe jupyter_lab_config.py file is copied to ~/.jupyter/"

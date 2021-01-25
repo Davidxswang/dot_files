@@ -1,8 +1,9 @@
 # What This Does
-This repo will enable a uniform setup of some common software, including tmux, vim.
+This repo will enable a uniform config of some common software, including tmux, vim, jupyter-lab.
 
 # How to Use it
 Clone the repo to the local environment. Run the following command:
+
 ```
 ./install.sh
 ```
