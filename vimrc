@@ -10,7 +10,7 @@ set shortmess+=I
 " Show line numbers.
 set number
 
-" This enables relative line numbering mode. 
+" This enables relative line numbering mode.
 set relativenumber
 
 " Always show the status line at the bottom.

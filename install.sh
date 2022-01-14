@@ -26,23 +26,3 @@ if [ ! -d "~/.jupyter" ]
 		echo -e "\e[93m~/.jupyter folder does not exist, so we created it.\e[0m"
 		mkdir ~/.jupyter
 fi
-
-# jupyter lab
-if [ -f ~/.jupyter/jupyter_lab_config.py ]
-	then
-		echo -e "\e[91mA jupyter_lab_config.py file already exists in ~/.jupyter/, a backup is made.\e[0m"
-		cp ~/.jupyter/jupyter_lab_config.py ~/.jupyter/jupyter_lab_config.py.backup
-fi
-
-cp jupyter_lab_config.py ~/.jupyter/jupyter_lab_config.py
-echo -e "\e[93mThe jupyter_lab_config.py file is copied to ~/.jupyter/"
-
-# jupyter notebook
-if [ -f ~/.jupyter/jupyter_notebook_config.py ]
-	then
-		echo -e "\e[91mA jupyter_notebook_config.py file already exists in ~/.jupyter/, a backup is made.\e[0m"
-		cp ~/.jupyter/jupyter_notebook_config.py ~/.jupyter/jupyter_notebook_config.py.backup
-fi
-
-cp jupyter_notebook_config.py ~/.jupyter/jupyter_notebook_config.py
-echo -e "\e[93mThe jupyter_notebook_config.py file is copied to ~/.jupyter/"
