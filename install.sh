@@ -19,10 +19,3 @@ fi
 
 cp tmux.conf ~/.tmux.conf
 echo -e "\e[93mThe tmux.conf file is copied to ~.\e[0m"
-
-# jupyter config folder
-if [ ! -d "~/.jupyter" ]
-	then
-		echo -e "\e[93m~/.jupyter folder does not exist, so we created it.\e[0m"
-		mkdir ~/.jupyter
-fi
